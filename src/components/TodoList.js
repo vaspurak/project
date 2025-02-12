@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../components/TodoList.css";
 
 function TodoList() {
   const [users, setUsers] = useState([]);
@@ -22,7 +23,7 @@ function TodoList() {
   }, []);
 
   return (
-    <div>
+    <div className="block-list">
       <ul className="container">
         {users.map((user) => (
           <li key={user.id}>
